@@ -1,7 +1,9 @@
 import { useState } from "react";
-import InputName from "./NameInput";
-import LoginButton from "./LoginButton2";
-import Dashboard from "./Dashboard";
+import InputName from "./Components/NameInput";
+import LoginButton from "./Components/LoginButton2";
+import Dashboard from "./Components/Dashboard";
+import ListGroup from "./Components/ListGroup";
+import Alert  from "./Components/Alert";
 function App(){
   const [name, setName]= useState("");
   const [count, setCount] = useState(0);
@@ -13,6 +15,8 @@ function App(){
         <>
         <Dashboard name={name} count={count} setCount={()=> setCount(count+1)}/> 
         <LoginButton logged={logged} toggleLogged={()=>toggleLogged(!logged)}/>
+        <ListGroup items={items} title={title}}/>
+        <Alert/>
         </>
         :
       <>
