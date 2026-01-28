@@ -5,6 +5,7 @@ import Dashboard from "./Components/Dashboard";
 import ListGroup from "./Components/ListGroup";
 import Alert  from "./Components/Alert";
 import "./index.css";
+import logo from "./assets/react.svg";
 function App(){
   const [name, setName]= useState("");
   const [count, setCount] = useState(0);
@@ -14,6 +15,9 @@ function App(){
     console.log(item);
   }
   return (
+    <div className="page-wrapper">
+      <img src={logo} alt="logo" className="app-logo"/>
+    
     <div className="container min-vh-100 d-flex justify-content-center align-items-center">
       <div className="card shadow-lg p-4" style={{ width: "420px" }}> 
         <h1 className="card-title text-center mb-4">User Panel</h1>
@@ -33,6 +37,7 @@ function App(){
        }  
       </div>
     </div>
+  </div>
   )
 }
 export default App;
