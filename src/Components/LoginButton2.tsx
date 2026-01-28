@@ -4,7 +4,7 @@ type Props = {
 };
 function LoginButton ({logged,toggleLogged}: Props){
     return(
-        <button onClick={toggleLogged}>
+        <button className="text-center" onClick={toggleLogged}>
             { logged ? "Log out" : "Log in"}
         </button>
     );

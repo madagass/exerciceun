@@ -4,9 +4,10 @@ type Props = {
 };
 function Count ({count, setCount}: Props){
     return (
-        <div>
+        <div className="text-center">
             count : {count}
-            <button onClick={setCount}>Increase +</button>
+            <br></br>
+            <button onClick={setCount}>Increase</button>
         </div>
     );
 }

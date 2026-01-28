@@ -9,6 +9,7 @@ function ListGroup({items,title,onSelectedIndex}: Props){
     return ( 
         <div>
             <h1>{title}</h1>
+            <p>Click on item to select!</p>
             <ul className="list-group">
             {items.map((item,index)=>(<li className={ selectedIndex === index ? "list-group-item active": "list-group-item"} key={index} onClick={()=>{setSelectedIndex(index);onSelectedIndex(item);}}>{item}</li>))}
             </ul>

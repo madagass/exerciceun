@@ -5,7 +5,7 @@ type Props = {
 function InputName ({name, setName} : Props){
     console.log("NameInput rerendered")
     return(
-        <div>
+        <div className="text-center">
             <input value={name} onChange={(e)=>setName(e.target.value)} placeholder="Tappez votre nom"/>
         </div>
     )

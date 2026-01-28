@@ -8,7 +8,7 @@ function Dashboard ({name, count, setCount}: Props){
     console.log("Dashboard rerendered")
     return (
         <div>
-            <p>Yoooo whatsup {name} boubou hohohoho fuck polopolo dumme nigga click count for + fuck polo</p>
+            <p>Hello, {name}! How long do you want to count?</p>
             <br></br>
             <Count count={count} setCount={setCount} />
         </div>
